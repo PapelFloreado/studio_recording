@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "node": "^17.7.2",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "musicstudio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss ./assets/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PapelFloreado/studio_recording.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PapelFloreado/studio_recording/issues"
+  },
+  "homepage": "https://github.com/PapelFloreado/studio_recording#readme",
+  "description": ""
+}

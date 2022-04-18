@@ -1,0 +1,107 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Misc */
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Globals */
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif; }
+
+/* Partial */
+nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between; }
+  nav .logo {
+    width: 40%;
+    flex-basis: 40%; }
+  nav .menu {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    justify-content: flex-end; }
+    nav .menu__item, nav .menu__item--active {
+      border: 2px solid white;
+      transition: border-color .4s ease-in-out;
+      list-style-type: none; }
+      nav .menu__item--active {
+        border-color: 2px solid white; }
+      nav .menu__item:hover, nav .menu__item--active:hover {
+        border-color: black; }
+    nav .menu__link {
+      padding: 1rem;
+      color: black;
+      text-decoration: none; }
+
+/* Views */
+main h2 {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+  padding: 8rem 0; }
+
+main div {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  main div iframe {
+    margin: 0 auto;
+    border-radius: 3rem; }
+
+main section {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Imagen"; }
+  main section img {
+    width: 100%;
+    border-radius: 4rem;
+    padding: 0 1rem;
+    grid-area: Imagen; }
+  main section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 7rem;
+    text-shadow: 4px 0px 7px #000;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #000000 0px 0px 30px, #000000 0px 0px 40px;
+    align-items: center;
+    grid-area: Imagen; }
+
+main article {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Titulo Synth" "Texto Synth"; }
+  main article h3 {
+    font-size: 4rem;
+    grid-area: Titulo;
+    text-align: center;
+    align-self: center; }
+  main article p {
+    font-size: 2rem;
+    grid-area: Texto;
+    text-align: justify; }
+  main article img {
+    grid-area: Synth;
+    width: 100%; }
