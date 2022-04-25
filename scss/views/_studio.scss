@@ -1,0 +1,63 @@
+main {
+    @include pageContainer;
+    section.studio__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "neve1 neve1 neve1"
+        "neve2 neve2 snare"
+        "cole  neve3 neve3"
+        "neve4 neve4 neve4"
+        "drums drums akg"
+        "piano piano piano";
+
+        padding: 2rem;
+        
+    }
+
+    .neve1 {
+        grid-area: neve1;
+        width: 100%;
+        padding: 2rem;
+    }
+    .neve2 {
+        grid-area: neve2;
+        width: 100%;
+        padding: 2rem;
+    }
+    .snare {
+        grid-area: snare;
+        width: 100%;
+        padding: 2rem;
+    }
+    .neve3 {
+        grid-area: neve3;
+        width: 100%;
+        padding: 2rem;
+    }
+    .cole {
+        grid-area: cole;
+        width: 100%;
+        padding: 2rem;
+    }
+    .neve4 {
+        grid-area: neve4;
+        width: 100%;
+        padding: 2rem;
+    }
+    .drums {
+        grid-area: drums;
+        width: 100%;
+        padding: 2rem;
+    }
+    .akg{
+        grid-area: akg;
+        width: 100%;
+        padding: 2rem;
+    }
+    .piano {
+        grid-area: piano;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}

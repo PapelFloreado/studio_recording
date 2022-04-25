@@ -1,0 +1,43 @@
+footer {
+   
+    padding: 4rem;
+    background-color: #c8c8c8;
+    
+    
+   
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include pageContainer;
+    
+    .logo__foot {
+            align-self: center;
+            flex-basis: 30%;
+            justify-content: flex-start;
+            display: flex;
+            width: 20%;
+            
+        }
+        .menu{
+            
+            display: flex;
+            flex-direction: row;
+            flex-basis: 40%;
+            font-size: map-get($text-sizes , xsm );
+            justify-content:space-around;
+            align-self: center;
+            
+            &__item{
+                list-style-type: none;
+            }
+            &__link    {
+                text-decoration: none;
+                color: black;        
+            }
+        }
+    }
+}
+    
+    
+    

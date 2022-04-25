@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Papel Studio Recording</title>
 </head>
 <body>
-    <header class="pageContainer" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="500" data-aos-offset="0">
+    <!-- Inicio del Header -->
+    <header>
         <nav>
             <a href="index.html">
                 <img class="logo" src="./assets/public/media/img/logo-studio.svg" alt="Studio Logo">
@@ -24,43 +26,52 @@
             </ul>
         </nav>
     </header>
+    <!-- Final del Header -->
+    <!-- Inicio del Main -->
     <main>
-        <section data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="500" data-aos-offset="0">
-            <h1 data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-delay="1800" data-aos-offset="0">RECORDING STUDIO</h1>
-            <img src="./assets/public/media/img/console.jpg" alt="">
+        <section>
+            <h1 class="animate__animated animate__fadeIn">RECORDING STUDIO</h1>
+            <img src="./assets/public/media/img/console.jpg" alt="image of console">
         </section>
-        <h2 data-aos="zoom-in" data-aos-duration="3000">Our Studio</h2>
-        <div data-aos="zoom-in" data-aos-duration="3000">
-            <iframe src="https://player.vimeo.com/video/34329746?h=a3c0b4d76f" width="860" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <section>
+            <h2 class="animate__animated animate__fadeIn">Our Studio</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rHz-t-7XykQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
         <div>
-            <article>
+            <article class="synth animate__animated animate__fadeInUp">
                 <h3>Our Synths</h3>
                 <p>We have the highest range in terms of analog synthesizers. Come to know the true vintage sound.</p>
                 <img src="./assets/public/media/img/moog.jpg" alt="picture moog synth">
             </article>
-            <article>
-                <h3></h3>
-                <p></p>
-                <img src="" alt="">
-            </article>
-            <article>
-                <h3></h3>
-                <p></p>
-                <img src="" alt="">
+            <article class="mics animate__animated animate__fadeInUp">
+                <h3>Our Mics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam error animi impedit iusto. Exercitationem voluptatum amet quisquam temporibus soluta.</p>
+                <img src="./assets/public/media/img/telefunken-ela-m-251.webp" alt="picture of mics">
             </article>
         </div>
+        </section>
     </main>
+    <!-- Final del main -->
     <footer>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>    
+        <div class="container">
+            <a class="logo" href="./index.html">
+            <img class="logo__foot" src="./assets/public/media/img/logo-studio.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./assets/public/views/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.instagram.com/entreperros_/">Instagram</a>
+                </li>    
+                <li class="menu__item">
+                    <a class="menu__link" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=4S97alK5RsK95MLhM4VSZQ">Spotify</a>
+                </li>    
+            </ul>
+        </div>
     </footer>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 </html>

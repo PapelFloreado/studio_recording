@@ -1,12 +1,44 @@
 main {
+    @include pageContainer;
+    
+    section {
+        @include pageContainer;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-areas: "Imagen";
+            margin-bottom: 6rem;
+        
+        img {
+            width: 100%;
+            border-radius: 4rem;
+            grid-area: Imagen;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-family: $font-primary;
+            font-size: 7rem;
+            text-shadow: 4px 0px 7px #000;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #000000 0px 0px 30px, #000000 0px 0px 40px;
+            align-items: center;
+            grid-area: Imagen;
+            z-index: 1;    
+        }
+    }
     h2{
         @include pageContainer;
         text-align:center;
         font-size: map-get($text-sizes , md );
-        padding: 8rem 0;
+        margin-bottom: 6rem;
+        
 
     }
-    div {
+    div.ivideo {
         @include pageContainer;
         display: flex;
         justify-content: center;
@@ -16,38 +48,17 @@ main {
         }
     }
 
-    section {
-            align-items: center;
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-areas: "Imagen";
-        
-        img {
-            width: 100%;
-            border-radius: 4rem;
-            padding: 0 1rem;
-            grid-area: Imagen;
-        }
-        h1 {
-            font-family: $font-primary;
-            font-size: 7rem;
-            text-shadow: 4px 0px 7px #000;
-            text-align: center;
-            color: #FFFFFF;
-            text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #000000 0px 0px 30px, #000000 0px 0px 40px;
-            align-items: center;
-            grid-area: Imagen;    
-        }
-    }
-    article  {
+    article.synth  {
         @include pageContainer;
-        padding-top: 6rem;
+        padding-top: 12rem;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "Titulo Synth"
-        "Texto Synth"; 
+        "Texto Synth";
+        margin-bottom: 4rem;
+        
         h3 {
             font-size: map-get($text-sizes, md);
             grid-area: Titulo;
@@ -61,9 +72,38 @@ main {
         }
         img {
             grid-area: Synth;
-            width: 100%;
+            width: 90%;
+            padding: 1rem;
 
         } 
     }
-    
+    article.mics {
+        @include pageContainer;
+        padding-top: 10rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "Mics Titulo"
+        "Mics Texto";
+        margin-bottom: 4rem;
+        
+        h3 {
+            font-size: map-get($text-sizes, md);
+            grid-area: Titulo;
+            text-align: center;
+            align-self: center;
+        } 
+        p {
+            font-size: map-get($text-sizes, sm);    
+            grid-area: Texto;
+            text-align: justify;
+        }
+        img {
+            grid-area: Mics;
+            width: 60%;
+            padding: 1rem;
+
+        } 
+    }   
 }
