@@ -23,12 +23,32 @@
             </ul>
         </nav>
     </header>
-    <main>
-        
+    <main class="contact">
+        <h2 class="contact__title">Leave us your message and we will contact you soon!</h2>
+        <form action="form">
+            <div class="form__div">
+            <label for="name">Your name</label>
+            <input class="border" type="text" id="name" placeholder="Name">
+            <label for="email">Your Email</label>
+            <input class="border" type="email" id="email" placeholder="Your email">
+            <label for="sevice">Why do you contact us?</label>
+            <select class="border" name="service" id="service">
+                <option value="record">Recording</option>
+                <option value="rehearsal">Musical rehearsal</option>
+                <option value="mixing">Mix and Mastering</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="text" id="text" cols="30" rows="10">Leave us your message</textarea>
+            <div>
+                <input class="buttom" type="submit" value="Submit">
+                <input class="buttom" type="reset" value="Clear">
+            </div>
+            </div>    
+        </form>
     </main>
     <footer>
         <div class="container">
-            <a class="logo" href="./index.html">
+            <a class="logo" href="../../../index.html">
             <img class="logo__foot" src="../media/img/logo-studio.svg" alt="logo studio">
             </a>
             <ul class="menu">

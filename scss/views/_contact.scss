@@ -1,0 +1,56 @@
+main .contact {
+    @include pageContainer;
+    min-height: 100vh;
+}   
+
+main{
+    min-height: 100vh;
+    
+}
+    .form__div {
+        @include pageContainer;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 6rem;
+        background-size: 50%;
+        border-radius: 3rem;
+        font-size: map-get($text-sizes , sm );
+        margin: 0 20rem;
+        
+        .border{
+            border: 0;
+            border-bottom: 2px solid black;
+        }
+        select{
+            margin-bottom: 1rem;
+            background-color: white ;
+        }
+        textarea{
+            margin-top: 2rem;
+            padding: 2rem;
+        }
+        input {
+            line-height: 3rem;
+        }
+        option {
+            line-height: 3rem;
+        }
+        label {
+            padding: 1rem;
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem;
+            justify-content: center;
+
+            input.buttom{
+                padding: 2rem;
+                color: white;
+                background-color: black;
+                border:0;
+                border-radius: 1rem;
+                margin: 0 1rem;
+            }
+        }
+    }
